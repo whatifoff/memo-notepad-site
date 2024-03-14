@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Raleway:wght@400;700&amp;display=swap"> 
     <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: "Raleway", sans-serif;
+        }
+        body{
+            background: conic-gradient(from -90deg, #007aff, #34c759, #007aff);
+            padding: 30px;
+        }
+        .container{
+            max-width: 980px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, .85);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        header{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        img{
+            max-width: 900px;
+            width: 100%;
+            -webkit-box-shadow: 0px 0px 48px -8px rgba(0,0,0,0.62);
+            -moz-box-shadow: 0px 0px 48px -8px rgba(0,0,0,0.62);
+            box-shadow: 0px 0px 48px -8px rgba(0,0,0,0.62);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <header>
+            <h1>Memo Notepad has been installed</h1>
+        </header>
+
+        <main>
+            <p>Click the puzzle piece (1) in the top right of your browser. Then, click the little pin (2) next to the extension:</p>
+
+            <img src="img/welcome.png" alt="">
+
+            <!-- <p>Open the extension (3) on any page to begin counting Memo Notepad:</p> -->
+        </main>
+    </div>
 </body>
 </html>
